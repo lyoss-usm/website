@@ -10,4 +10,5 @@ export default defineConfig({
 	},
 	output: "static",
 	site: "https://lyoss.org",
+	compressHTML: true,
 });
