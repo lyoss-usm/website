@@ -84,3 +84,44 @@
   --depth: 1;
   --noise: 0;
 }
+
+.orbit-spin-20s {
+  animation: spin 20s linear infinite;
+}
+
+.orbit-spin-35s {
+  animation: spin 35s linear infinite;
+}
+
+.orbit-spin-50s {
+  animation: spin 50s linear infinite;
+}
+
+.orbit-spin-75s {
+  animation: spin 75s linear infinite;
+}
+
+.avatar-spin-reverse-20s {
+  animation: spin 20s linear infinite reverse;
+}
+
+.avatar-spin-reverse-35s {
+  animation: spin 35s linear infinite reverse;
+}
+
+.avatar-spin-reverse-50s {
+  animation: spin 50s linear infinite reverse;
+}
+
+.avatar-spin-reverse-75s {
+  animation: spin 75s linear infinite reverse;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
