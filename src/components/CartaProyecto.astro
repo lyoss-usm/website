@@ -1,5 +1,14 @@
 ---
-import { Github, Disc, Star, Users, CircleCheckBig, HeartHandshake, Globe, GitFork } from '@lucide/astro';
+import {
+	Github,
+	Disc,
+	Star,
+	Users,
+	CircleCheckBig,
+	HeartHandshake,
+	Globe,
+	GitFork
+} from '@lucide/astro';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 
@@ -170,47 +179,47 @@ const issuesUrl = githubUrl ? `${githubUrl}/issues` : undefined;
 			<div class="flex items-center gap-2">
 				{
 					githubUrl && (
-					<a
-						href={githubUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="tooltip tooltip-left inline-flex h-8 w-8 items-center justify-center rounded-lg border border-base-content/20 bg-base-content/5 text-base-content/80 transition-all duration-200 hover:border-base-content/30 hover:bg-base-content/10 hover:text-base-content"
-						data-tip="Repositorio"
-						aria-label="View project on GitHub"
-					>
-						<Github class="h-4 w-4" />
-					</a>
+						<a
+							href={githubUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="tooltip tooltip-left inline-flex h-8 w-8 items-center justify-center rounded-lg border border-base-content/20 bg-base-content/5 text-base-content/80 transition-all duration-200 hover:border-base-content/30 hover:bg-base-content/10 hover:text-base-content"
+							data-tip="Repositorio"
+							aria-label="View project on GitHub"
+						>
+							<Github class="h-4 w-4" />
+						</a>
 					)
 				}
 
 				{
 					issuesUrl && (
-					<a
-						href={issuesUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="tooltip tooltip-left inline-flex h-8 w-8 items-center justify-center rounded-lg border border-base-content/20 bg-base-content/5 text-base-content/80 transition-all duration-200 hover:border-base-content/30 hover:bg-base-content/10 hover:text-base-content"
-						data-tip="Issues"
-						aria-label="View project issues"
-					>
-						<Disc class="h-4 w-4" />
-					</a>
+						<a
+							href={issuesUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="tooltip tooltip-left inline-flex h-8 w-8 items-center justify-center rounded-lg border border-base-content/20 bg-base-content/5 text-base-content/80 transition-all duration-200 hover:border-base-content/30 hover:bg-base-content/10 hover:text-base-content"
+							data-tip="Issues"
+							aria-label="View project issues"
+						>
+							<Disc class="h-4 w-4" />
+						</a>
 					)
 				}
 
 				{
-				siteUrl && (
-					<a
-						href={siteUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="tooltip tooltip-left inline-flex h-8 w-8 items-center justify-center rounded-lg border border-base-content/20 bg-base-content/5 text-base-content/80 transition-all duration-200 hover:border-base-content/30 hover:bg-base-content/10 hover:text-base-content"
-						data-tip="Web"
-						aria-label="Visit project website"
-					>
-						<Globe class="h-4 w-4" />
-					</a>
-				)
+					siteUrl && (
+						<a
+							href={siteUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="tooltip tooltip-left inline-flex h-8 w-8 items-center justify-center rounded-lg border border-base-content/20 bg-base-content/5 text-base-content/80 transition-all duration-200 hover:border-base-content/30 hover:bg-base-content/10 hover:text-base-content"
+							data-tip="Web"
+							aria-label="Visit project website"
+						>
+							<Globe class="h-4 w-4" />
+						</a>
+					)
 				}
 			</div>
 		</div>

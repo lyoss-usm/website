@@ -9,4 +9,15 @@ import Badge from './Badge.astro';
 import ContribuirCard from './ContribuirCard.astro';
 import ContribuirStep from './ContribuirStep.astro';
 
-export { Mini, Strong, Sub, Heading, Paragraph, Accent, Stat, Badge, ContribuirCard, ContribuirStep };
+export {
+	Mini,
+	Strong,
+	Sub,
+	Heading,
+	Paragraph,
+	Accent,
+	Stat,
+	Badge,
+	ContribuirCard,
+	ContribuirStep
+};
